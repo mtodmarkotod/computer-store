@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+[class^="col-"] {
+    padding: 0;
+  }
+.row{
+    max-width: 100vw;
+    margin: 0;
+}
+body{
+    width: 100%;
+    overflow-y: hidden;
+}
+.main-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.form{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.form-group{
+    margin-bottom: 0;
+}
+#add{
+    width: 92px;
+    margin-right: 10px;
+}
+.err{
+    color: red;
+    height: 21px;
+    font-size: .9rem !important;
+    margin-bottom: .5rem;   
+}
+.update-err{
+    margin-top: .5rem;
+}
+.form-box{
+    background-color: rgb(232, 237, 247);
+    height: 100vh;
+}
+.value{
+    text-align: center;
+    color: blue;
+}
+.input-box{
+    background-color: rgb(232, 237, 247);
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.search{  
+    width: 93%;
+    margin: 0 auto;
+}
+.alert{
+    height: 50px;
+    margin: 20px 0;
+}
+
+.content-box{
+    height: 65vh;
+    padding-bottom: 250px;
+    overflow-y: auto;
+    border: 1px solid rgb(219, 212, 212);
+    padding: 20px;
+    border-radius: 5px;
+}
+.item-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(219, 212, 212);
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.item-box:not(:last-child){
+    margin-bottom: 10px;
+}
+.item-image{
+    width: 120px;
+    height: 100px;
+}
+.item-info{
+    margin: 0;
+}
+.counter{
+    display: flex;
+    align-items: center;
+    
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgb(232, 237, 247);
+    margin-left: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    body{
+        overflow-y: visible;
+    }
+    .form-box{
+        height: 100%;
+    }
+    .form{
+        width: 50%;
+        margin: 50px auto;
+        margin-top: 30px;
+    }
+    .content-box{
+        margin-bottom: 30px;
+    }
+  }
+
+/* MOBILE L */
+@media screen and (max-width: 425px) {
+    .form{
+        width: 93%;
+    }
+    .item-box{
+        flex-direction: column;
+        height: 270px;
+    }
+}
